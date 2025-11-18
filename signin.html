@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileHub | Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="MobileHub Logo" class="sitelogo">
+            <h1>Mobile<span class="hub-text">Hub</span></h1>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a>
+            <a href="signin.html" class="nav-link active"><i class="fas fa-user-circle"></i> Sign In</a>
+        </nav>
+    </header>
+
+    <main class="signin-page">
+        <div class="auth-container">
+            <h2 class="section-title">Welcome to Mobile Hub</h2>
+            <p class="subtitle">Sign in to unlock exclusive deals and faster checkout.</p>
+            <form onsubmit="event.preventDefault(); alert('Signed in successfully!');">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="#">Create One</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 **Mobile Hub** | All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
